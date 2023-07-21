@@ -2,7 +2,7 @@ var c = document.getElementById("c");
 var ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
-var chinese = "MAELNGIORNST10";
+var chinese = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/@#$%^&*()-_=+~;|'][}{><!?.,";
 chinese = chinese.split("");
 var font_size = 10;
 var columns = c.width/font_size;
@@ -22,4 +22,4 @@ function draw(){
 		drops[i]++;
 	}
 }
-setInterval(draw, 33);
+setInterval(draw, 50);
